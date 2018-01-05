@@ -42,10 +42,11 @@ class LINE:
     self.authToken = self.Talk.authToken
     self.cert = self.Talk.cert
     self._headers = {
-              'X-Line-Application': 'CHROMEOS\t.1.4.5\tChrome_HP\t1',#'DESKTOPMAC 10.10.2-YOSEMITE-x64    MAC 4.5.0', 
-              'X-Line-Access': self.authToken, 
-              'User-Agent': 'Line/7.18.0'#'Line/7.18.0 AppleWebKit/534.30'#'Line/6.0.0 iPad4,1 9.0.2'#'Line/7.18.0 iPad4,1 9.0.2'
-   }
+              'X-Line-Application': 'IOSIPAD\t7.14.0\tiPhone OS\t10.12.0',
+              'X-Line-Access': self.authToken,
+              'User-Agent': 'Line/7.14.0 iPad5,1 10.2.0'
+     
+    }
     self.Poll = Poll(self.authToken)
     #self.channel = channel.Channel(self.authToken)
     #self.channel.login()
